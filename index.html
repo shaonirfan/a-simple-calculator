@@ -12,34 +12,32 @@
     <div class="container">
       <div id="calculator">
         <div id="result">
-            <div id="history">
-                <p id="history-value"></p>
-            </div>
             <div id="output">
+                <!-- <input type="text" id="output-value"> -->
                 <p id="output-value"></p>
             </div>
         </div>
         <div id="keyboard">
-            <button class="operator" id="clear">C</button>
-            <button class="operator" id="backspace">CE</button>
-            <button class="operator" id="%">%</button>
-            <button class="operator" id="/">&#247;</button>
-            <button class="number" id="7">7</button>
-            <button class="number" id="8">8</button>
-            <button class="number" id="9">9</button>
-            <button class="operator" id="*">&times;</button>
-            <button class="number" id="4">4</button>
-            <button class="number" id="5">5</button>
-            <button class="number" id="6">6</button>
-            <button class="operator" id="-">-</button>
-            <button class="number" id="1">1</button>
-            <button class="number" id="2">2</button>
-            <button class="number" id="3">3</button>
-            <button class="operator" id="+">+</button>
-            <button class="empty" id="empty"></button>
-            <button class="number" id="0">0</button>
-            <button class="empty" id="empty"></button>
-            <button class="operator" id="=">=</button>
+            <button class="operator" id="clear" onclick="deleteMe()">C</button>
+            <button class="operator calculator" onclick="calculator('(')">(</button>
+            <button class="operator calculator" onclick="calculator(')')">)</button>
+            <button class="operator calculator" onclick="calculator('/')">&#247;</button>
+            <button class="number calculator" onclick="calculator('7')">7</button>
+            <button class="number calculator" onclick="calculator('8')">8</button>
+            <button class="number calculator" onclick="calculator('9')">9</button>
+            <button class="operator calculator" onclick="calculator('*')">&times;</button>
+            <button class="number calculator" onclick="calculator('4')">4</button>
+            <button class="number calculator" onclick="calculator('5')">5</button>
+            <button class="number calculator" onclick="calculator('6')">6</button>
+            <button class="operator calculator" onclick="calculator('-')">-</button>
+            <button class="number calculator" onclick="calculator('1')">1</button>
+            <button class="number calculator" onclick="calculator('2')">2</button>
+            <button class="number calculator" onclick="calculator('3')">3</button>
+            <button class="operator calculator" onclick="calculator('+')">+</button>
+            <button class="empty calculator" onclick="calculator('.')">.</button>
+            <button class="number calculator" onclick="calculator('0')">0</button>
+            <button class="empty calculator" id="empty"></button>
+            <button class="operator answer" onclick="answer()">=</button>
         </div>
       </div>
     </div>

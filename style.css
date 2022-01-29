@@ -21,17 +21,15 @@ body{
 }
 #result{
 	height: 120px;
-}#history{
+	
+}
+#output-value{
 	text-align: right;
-	height: 20px;
-	margin: 0 20px;
-	padding-top: 20px;
-	font-size: 15px;
-	color: #919191;
 }
 #output{
 	text-align: right;
 	height: 60px;
+	width: 100px;
 	margin: 10px 20px;
 	font-size: 30px;
 }
